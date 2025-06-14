@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin-bottom: 30px;
+        }
+        textarea {
+            width: 100%;
+            height: 80px;
+        }
+        .messages {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Guestbook</h2>
+
+<form action="save.php" method="post">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Message:</label><br>
+    <textarea name="message" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<h3>Messages:</h3>
+<div class="messages">
+    
+</div>
+
+</body>
+</html>
